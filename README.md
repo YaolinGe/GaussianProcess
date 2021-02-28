@@ -1,4 +1,4 @@
-# GP in 1D
+# GP in 1D [Code](GP_1D.py)
 ---
 ##The procedures for simulating GP in 1D, random realisation, no specified point.
 
@@ -13,6 +13,22 @@
 * find posterior mean, `mu_post = prior + Sigma * F' * inv(C) * (y - F * prior)`
 * find posterior covariance, `cov_post = Sigma - Sigma * F' * inv(C) * F * Sigma`
 
+
+```
+{
+	refer to the codes
+}
+```
+
+#### Some small questions
+- In such setting, C might be singular, why? It seems that reducing number of samples can reduce the number of times this singularity happens. 
+- I guess it is because it has some overlapping samples
+
+
+
+---
+# GP in 2D
+---
 
 
 
