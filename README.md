@@ -9,7 +9,7 @@
 * simulate random generalisation, `r = prior + L * z # z here is random normal with mu = 0, tau = 1`
 * sample with design matrix, `F = matrix(M, n) # M is number of samples to measure on the grid`
 * sample from the true with measurement noise, `y = F*r + tau * randn(M)`
-* predict the field covariance with measurements, `C = F*Sigma*F' + tau ** 2 * ones(M, 1)`
+* predict the field covariance with measurements, `C = F*Sigma*F' + tau ** 2 * ones(M, M) # take care, otherwise, singular matrix`
 * find posterior mean, `mu_post = prior + Sigma * F' * inv(C) * (y - F * prior)`
 * find posterior covariance, `cov_post = Sigma - Sigma * F' * inv(C) * F * Sigma`
 
