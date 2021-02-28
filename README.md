@@ -1,6 +1,6 @@
-# GP in 1D [Code](GP_1D.py)
+# [GP in 1D](GP_1D.py)
 ---
-##The procedures for simulating GP in 1D, random realisation, no specified point.
+## The procedures for simulating GP in 1D, random realisation, no specified point.
 
 * set up the grid, `sites = 1:n`
 * compute euclidean distances, `H = abs(loc1 - loc2)`
@@ -27,8 +27,21 @@
 
 
 ---
-# GP in 2D
+# [GP in 2D](GP_2D.py)
 ---
+
+## Similar to 1D case, but what needs to be noticed, is that it need to take care of the sampling design and distance matrix
+
+
+
+
+
+
+
+
+
+
+
 
 
 
